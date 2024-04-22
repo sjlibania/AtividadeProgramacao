@@ -4,24 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lista1Ex8
+namespace Lista1Ex9
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            double celsius;
-            double fahrenheit;
+
+            double diamentro;
+            double area;
+
+            Console.Write("Digite o valor do diâmentro do Círculo:  ");
+            diamentro = double.Parse(Console.ReadLine());
 
 
-            Console.Write("Digite a temperatura em Celsius: ");
-            celsius = double.Parse(Console.ReadLine());
+            area = Math.Pow( diamentro/2,2) * 3.14;
 
-            fahrenheit = (celsius * 9 / 5) + 32;
-
-            Console.Write("O valor dado em Celsius transformado em fahrenheit equivale a:  ");
-            Console.WriteLine(fahrenheit);
-
+            Console.Write("O valor da area do círculo é:  ");
+            Console.WriteLine(area);
         }
     }
 }
