@@ -4,22 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lista1Ex3
+namespace Lista1Ex4
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            double d;
-            double area;
 
+            int b;
+            int h;
+            int area;
 
-            Console.Write("Digite o valor da diagonal do quadrado: ");
-            d = double.Parse(Console.ReadLine());
+            Console.Write("Digite o valor da Base do Triângulo:  ");
+            b = int.Parse(Console.ReadLine());
 
-            area = Math.Pow( d, 2)/2;
+            Console.Write("Digite o valor da altura do triângulo:  ");
+            h = int.Parse(Console.ReadLine());
 
-            Console.Write("O Valor da área do quadrado é: ");
+            area = b * h/2;
+            
+
+            Console.Write("Este é o resultado da área do triângulo:  ");
             Console.WriteLine(area);
 
         }
