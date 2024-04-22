@@ -4,24 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lista1Ex7
+namespace Lista1Ex8
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            
-            double quilometros;
-            double milhasNauticas;
-
-            Console.Write("Digite o número de milhas Náuticas: ");
-            milhasNauticas = double.Parse(Console.ReadLine());
+            double celsius;
+            double fahrenheit;
 
 
-            quilometros = (milhasNauticas * 1.852)/ 0.001;
+            Console.Write("Digite a temperatura em Celsius: ");
+            celsius = double.Parse(Console.ReadLine());
 
-            Console.Write("O resultado desse valor de milhas marítimas em km é: ");
-            Console.WriteLine(quilometros);
+            fahrenheit = (celsius * 9 / 5) + 32;
+
+            Console.Write("O valor dado em Celsius transformado em fahrenheit equivale a:  ");
+            Console.WriteLine(fahrenheit);
 
         }
     }
